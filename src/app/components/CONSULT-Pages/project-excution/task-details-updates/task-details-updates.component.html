@@ -1,0 +1,58 @@
+<div class="content-header shape">
+  <div class="container-fluid">
+      <div class="row mb-2">
+          <div class="col-sm-6">
+              <h3 class="m-0">Task Details</h3>
+          </div><!-- /.col -->
+
+      </div><!-- /.row -->
+      <div class="pagetitle">
+          <nav>
+              <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                  <li class="breadcrumb-item active">Task Details </li>
+              </ol>
+          </nav>
+      </div>
+  </div><!-- /.container-fluid -->
+</div>
+<div cdkDropListGroup>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="example-container">           
+              <h2 class="badge-warning">Task to Do</h2>
+              <div
+                cdkDropList
+                [cdkDropListData]="task"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of task" cdkDrag>{{item}}</div>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="example-container">
+              <h2 class="badge-primary">OnProgress</h2>
+              <div
+                cdkDropList
+                [cdkDropListData]="progress"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of progress" cdkDrag>{{item}}</div>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="example-container">
+              <h2 class="badge-success">Completed</h2>
+              <div
+                cdkDropList
+                [cdkDropListData]="done"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+              </div>
+            </div>
+      </div>
+  </div>
+</div>

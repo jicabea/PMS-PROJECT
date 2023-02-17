@@ -1,0 +1,23 @@
+.shape{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.card{
+    max-width: 1260px;
+    min-width: 200px;
+    align-items: center;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    justify-content: space-between;
+  background-color: rgb(244, 247, 251);
+  }
+
+ .card-1{
+  background-color: rgb(244, 247, 251);
+ }
+
+ .border-left{
+  border-left: 5rem;
+  border-color: rgb(35, 43, 162);
+  
+ }

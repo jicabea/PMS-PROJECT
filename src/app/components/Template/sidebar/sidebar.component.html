@@ -1,0 +1,47 @@
+<mat-nav-list>
+  <div class="logo py-4">
+    <img src="https://www.pngfind.com/pngs/m/154-1540858_banner-library-stock-man-user-internet-web-globe.png"
+      alt="Company Logo" />
+    <h4 class="name">Admin</h4>
+    <p class="mail">admin@gmail.com</p>
+  </div>
+  <mat-divider></mat-divider>
+  <h2 matSubheader class="mt-2">JOT USER</h2>
+  <!--   
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/home"><mat-icon>view_quilt</mat-icon> Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/projectin"><mat-icon>next_week</mat-icon>Project Registration</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/list"><mat-icon>assignment_returned</mat-icon>Project Approval</a>
+    -->
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          PROJECT DETAILS
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/home"><mat-icon>view_quilt</mat-icon>Dashboard</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/reg"><mat-icon>next_week</mat-icon>Project Registration</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/approv"><mat-icon>assignment_returned</mat-icon>Project Approval</a>    
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/pay"><mat-icon> monetization_on</mat-icon>Expenditure </a>
+       <a mat-list-item routerLinkActive="list-item-active" routerLink="/report"><mat-icon> layers</mat-icon>Reports </a>  
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <h2 matSubheader class="mt-2">CONSULTANT USER</h2>
+  
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          CONSULTANT DETAILS
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/cons-dash"><mat-icon>view_quilt</mat-icon>Dashboard</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/excute"><mat-icon>sync</mat-icon>Project Execution</a>   
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/consult-report"><mat-icon> layers</mat-icon>Reports </a>  
+     
+    </mat-expansion-panel>
+  </mat-accordion>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/profile"><mat-icon>account_circle</mat-icon>Profile</a>
+</mat-nav-list>

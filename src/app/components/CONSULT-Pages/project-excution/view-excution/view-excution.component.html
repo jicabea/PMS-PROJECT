@@ -1,0 +1,234 @@
+<div class="content-header shape">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h3 class="m-0">Project Details</h3>
+            </div><!-- /.col -->
+
+        </div><!-- /.row -->
+        <div class="pagetitle">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                    <li class="breadcrumb-item active">Project Details </li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- /.container-fluid -->
+</div>
+
+<mat-card class="card border-left">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="callout callout-info">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <dl>
+                                <dt><b class="border-bottom border-primary">Project Name</b></dt>
+                                <dd>Ujenzi wa Nyumba 20 Za Majaji wafawidhi wa Mahakama ya Kuu ya Tanzania</dd>
+                                <dt><b class="border-bottom border-primary">Contract Number</b></dt>
+                                <dd>JOT/OT/BULD/012</dd>
+                                <dt><b class="border-bottom border-primary">Description</b></dt>
+                                <dd>Kutakuwa na ujenzi wa nyumba za makazi za majaji wafawidhi wa mahakama kuu ya
+                                    Tanzania Bara utakaoanza tarehe </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <dl>
+                                <dt><b class="border-bottom border-primary">Start Date</b></dt>
+                                <dd>March 23, 2023</dd>
+                            </dl>
+                            <dl>
+                                <dt><b class="border-bottom border-primary">End Date</b></dt>
+                                <dd>March 17, 2024</dd>
+                            </dl>
+                            <dl>
+                                <dt><b class="border-bottom border-primary">Status</b></dt>
+                                <dd>
+                                    <span class="badge badge-warning">Pending</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><b class="border-bottom border-primary">Project Manager</b></dt>
+                                <dd>
+                                    <div class="d-flex align-items-center mt-1">
+                                        <img class="img-circle img-thumbnail p-0 shadow-sm border-info img-sm mr-3"
+                                            src="../../../../../assets/image/1606978560_avatar.jpg" alt="Avatar"
+                                            style="width: 30px; height: 20px; border-radius: 5px;">
+                                        <b>Angel Jude Suarez</b>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-card>
+<br>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card border-left" >
+            <div> 
+                <h5><strong><b>Team Member/s:</b></strong></h5>
+                <hr>
+            </div>
+                <ul>
+                    <li>
+                        <img src="../../../../../assets/image/bea.jpg" alt="User Image" style="width: 20px; height: 30px; border-radius: 7px;">
+                        <a class="users-list-name">Adriana Mercurio</a>
+                    </li>
+                    <li>
+                        <img src="../../../../../assets/image/1606978560_avatar.jpg" alt="User Image" style="width: 20px; height: 30px; border-radius: 7px;">
+                        <a class="users-list-name">Niko Curaza</a>
+                    </li>
+                    <li>
+                        <img src="../../../../../assets/image/bea.jpg" alt="User Image" style="width: 20px; height: 30px; border-radius: 7px;">
+                        <a class="users-list-name">Adriana Mercurio</a>
+                    </li>
+                    <li>
+                        <img src="../../../../../assets/image/1606978560_avatar.jpg" alt="User Image" style="width: 20px; height: 30px; border-radius: 7px;">
+                        <a class="users-list-name">Niko Curaza</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card card-outline card-primary border-left">
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">                  
+                   <li class="nav-item"> <b>Task List:</b></li>
+                   <li class="nav-item" style="padding-left: 6rem;"><a class="nav-link active" (click)="addDialog()">New Task</a></li> 
+                   <li class="nav-item" style="padding-left: 20rem;"> <a class="nav-link active" (click)="updateDialog()">Update Tasks</a></li>                 
+                </ul>
+             </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-condensed m-0 table-hover">
+                        <colgroup>
+                            <col width="5%">
+                            <col width="25%">
+                            <col width="30%">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Task</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class=""><b>Meet With Stakeholder</b></td>
+                                <td class="">
+                                    <p class="truncate">meet with stakeholder </p>
+                                </td>
+                                <td>
+                                    <span class="badge badge-warning">Pending</span>
+                                </td>
+                                <td class="text-center">
+                                    <button type="button"
+                                        class="btn btn-default btn-sm btn-flat border-info wave-effect text-info dropdown-toggle"
+                                        data-toggle="dropdown" aria-expanded="true">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item view_task" (click)="updateDialog()" data-id="7"
+                                            data-task="meet with stakeholder">Update</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item delete_task" href="javascript:void(0)"
+                                            data-id="7">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class=""><b>Software Design</b></td>
+                                <td class="">
+                                    <p class="truncate">software design </p>
+                                </td>
+                                <td>
+                                    <span class="badge badge-success">Completed</span>
+                                </td>
+                                <td class="text-center">
+                                    <button type="button"
+                                        class="btn btn-default btn-sm btn-flat border-info wave-effect text-info dropdown-toggle"
+                                        data-toggle="dropdown" aria-expanded="true">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu" >
+                                        <a class="dropdown-item view_task" (click)="updateDialog()" data-id="7"
+                                        data-task="meet with stakeholder">Update</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item delete_task" href="javascript:void(0)"
+                                            data-id="6">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class=""><b>Softwarw Requirements</b></td>
+                                <td class="">
+                                    <p class="truncate">softwarw requirements </p>
+                                </td>
+                                <td>
+                                    <span class="badge badge-primary">On-Progress</span>
+                                </td>
+                                <td class="text-center">
+                                    <button type="button"
+                                        class="btn btn-default btn-sm btn-flat border-info wave-effect text-info dropdown-toggle"
+                                        data-toggle="dropdown" aria-expanded="true">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item view_task" (click)="updateDialog()" data-id="7"
+                                        data-task="meet with stakeholder">Update</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item delete_task" href="javascript:void(0)"
+                                            data-id="5">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class=""><b>Softwarw Requirements</b></td>
+                                <td class="">
+                                    <p class="truncate">softwarw requirements </p>
+                                </td>
+                                <td>
+                                    <span class="badge badge-danger">Cancelled</span>
+                                </td>
+                                <td class="text-center">
+                                    <button type="button"
+                                        class="btn btn-default btn-sm btn-flat border-info wave-effect text-info dropdown-toggle"
+                                        data-toggle="dropdown" aria-expanded="true">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item view_task" (click)="updateDialog()" data-id="7"
+                                            data-task="meet with stakeholder">Update</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item delete_task" href="javascript:void(0)"
+                                            data-id="5">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<mat-card>
+    <app-footer></app-footer>
+</mat-card>
