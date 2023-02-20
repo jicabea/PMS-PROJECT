@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-project-registration',
-  templateUrl: './project-registration.component.html',
-  styleUrls: ['./project-registration.component.css']
+  selector: 'app-edit-project',
+  templateUrl: './edit-project.component.html',
+  styleUrls: ['./edit-project.component.css']
 })
-export class ProjectRegistrationComponent implements OnInit {
+export class EditProjectComponent implements OnInit {
   public ict:boolean=false
   public pmu:boolean=false
   public hemu:boolean=false
@@ -59,4 +59,5 @@ export class ProjectRegistrationComponent implements OnInit {
   }
   ngOnInit(): void {
   }
+
 }

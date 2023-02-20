@@ -42,6 +42,9 @@ import { ViewExcutionComponent } from './components/CONSULT-Pages/project-excuti
 import { AddTaskComponent } from './components/CONSULT-Pages/project-excution/add-task/add-task.component';
 import { TaskDetailsUpdatesComponent } from './components/CONSULT-Pages/project-excution/task-details-updates/task-details-updates.component';
 import { ViewProjectComponent } from './components/JOT-Pages/project-approval/view-project/view-project.component';
+import { ExternalProjectsComponent } from './components/JOT-Pages/project-registration/external-projects/external-projects.component';
+import { EditProjectComponent } from './components/JOT-Pages/project-approval/edit-project/edit-project.component';
+import { DeleteProjectComponent } from './components/JOT-Pages/project-approval/delete-project/delete-project.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +69,9 @@ import { ViewProjectComponent } from './components/JOT-Pages/project-approval/vi
     AddTaskComponent,
     TaskDetailsUpdatesComponent,
     ViewProjectComponent,
+    ExternalProjectsComponent,
+    EditProjectComponent,
+    DeleteProjectComponent,
   ],
   imports: [
     BrowserModule,

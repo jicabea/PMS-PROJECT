@@ -8,6 +8,7 @@ import { SiteMeetingMemoComponent } from './components/CONSULT-Pages/site-meetin
 import { ProjectApprovalComponent } from './components/JOT-Pages/project-approval/project-approval.component';
 import { ProjectDashboardComponent } from './components/JOT-Pages/project-dashboard/project-dashboard.component';
 import { ProjectPaymentComponent } from './components/JOT-Pages/project-payment/project-payment.component';
+import { ExternalProjectsComponent } from './components/JOT-Pages/project-registration/external-projects/external-projects.component';
 import { ProjectRegistrationComponent } from './components/JOT-Pages/project-registration/project-registration.component';
 import { ProjectReportsComponent } from './components/JOT-Pages/project-reports/project-reports.component';
 import { EditprofileComponent } from './components/profile/editprofile/editprofile.component';
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'excute-view', component: ViewExcutionComponent},
   { path: 'consult-report', component: ConsultReportComponent},
   { path: 'memo', component: SiteMeetingMemoComponent},
+  {path: 'projectout', component:ExternalProjectsComponent}
 ];
 
 @NgModule({

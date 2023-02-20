@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-project-registration',
-  templateUrl: './project-registration.component.html',
-  styleUrls: ['./project-registration.component.css']
+  selector: 'app-external-projects',
+  templateUrl: './external-projects.component.html',
+  styleUrls: ['./external-projects.component.css']
 })
-export class ProjectRegistrationComponent implements OnInit {
+export class ExternalProjectsComponent implements OnInit {
+
+  constructor() { }
+  ngOnInit(): void {
+  }
   public ict:boolean=false
   public pmu:boolean=false
   public hemu:boolean=false
   public dpm:boolean=false
   public dcm:boolean=false
-  Supervisor: string[] = ['Essaba Machum', 'Agness Mchome', 'Lucian Mtitu', 'Michael Chambi', 'Samuel Mshote'];
-  constructor() { }
-
+  OwnerDepartment: string[] = ['ICT', 'HEMU', 'DCM', 'DPM', 'PMU'];
   changed(value: number | string) {
     let dropdownData;
     if (value == 1) {
@@ -57,6 +59,6 @@ export class ProjectRegistrationComponent implements OnInit {
       this.dcm=false
     }
   }
-  ngOnInit(): void {
-  }
+
+
 }

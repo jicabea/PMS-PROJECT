@@ -1,0 +1,12 @@
+<mat-dialog-content class="mat-typography">  
+    <form>
+      <h3>
+        <p>Are you sure you want to detele this?</p>
+      </h3>
+    </form>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close class="btn btn-secondary">No,Do not</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial class="btn btn-danger">Yes,Delete</button>
+  </mat-dialog-actions>
