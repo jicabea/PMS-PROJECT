@@ -14,7 +14,9 @@ import { ProjectReportsComponent } from './components/JOT-Pages/project-reports/
 import { EditprofileComponent } from './components/profile/editprofile/editprofile.component';
 import { ProfileChangePasswordComponent } from './components/profile/profile-change-password/profile-change-password.component';
 import { ProfileComponent } from './components/profile/profile.component';
-
+import { PartialpaidComponent } from './components/JOT-Pages/project-payment/partialpaid/partialpaid.component';
+import { FullpaidComponent } from './components/JOT-Pages/project-payment/fullpaid/fullpaid.component';
+import { UnpaidComponent } from './components/JOT-Pages/project-payment/unpaid/unpaid.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: ProjectDashboardComponent},
@@ -30,7 +32,10 @@ const routes: Routes = [
   { path: 'excute-view', component: ViewExcutionComponent},
   { path: 'consult-report', component: ConsultReportComponent},
   { path: 'memo', component: SiteMeetingMemoComponent},
-  {path: 'projectout', component:ExternalProjectsComponent}
+  {path: 'projectout', component:ExternalProjectsComponent},
+  { path: 'full', component: FullpaidComponent},
+  { path: 'partial', component: PartialpaidComponent },
+  { path: 'unpaid', component: UnpaidComponent},
 ];
 
 @NgModule({

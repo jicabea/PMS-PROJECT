@@ -45,6 +45,9 @@ import { ViewProjectComponent } from './components/JOT-Pages/project-approval/vi
 import { ExternalProjectsComponent } from './components/JOT-Pages/project-registration/external-projects/external-projects.component';
 import { EditProjectComponent } from './components/JOT-Pages/project-approval/edit-project/edit-project.component';
 import { DeleteProjectComponent } from './components/JOT-Pages/project-approval/delete-project/delete-project.component';
+import { PartialpaidComponent } from './components/JOT-Pages/project-payment/partialpaid/partialpaid.component';
+import { FullpaidComponent } from './components/JOT-Pages/project-payment/fullpaid/fullpaid.component';
+import { UnpaidComponent } from './components/JOT-Pages/project-payment/unpaid/unpaid.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +75,9 @@ import { DeleteProjectComponent } from './components/JOT-Pages/project-approval/
     ExternalProjectsComponent,
     EditProjectComponent,
     DeleteProjectComponent,
+    PartialpaidComponent,
+    FullpaidComponent,
+    UnpaidComponent,
   ],
   imports: [
     BrowserModule,
